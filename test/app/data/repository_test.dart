@@ -13,7 +13,7 @@ void main() {
 
   late final Repository repository;
 
-  setUp(() {
+  setUpAll(() {
     repository = Repository(dio: dio, refreshDio: refreshDio);
   });
 
