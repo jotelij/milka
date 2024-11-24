@@ -2,7 +2,6 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../data/i_repository.dart';
-import '../data/repository.dart';
 import '../data/enums.dart';
 import '../data/models/models.dart';
 
@@ -36,7 +35,7 @@ class SearchCubit extends Cubit<SearchState> {
       ),
     );
     try {
-      final result = await Repository.instance.searchResult(searchWord);
+      final result = await repository.searchResult(searchWord);
       emit(
         state.copyWith(
           stateType: SearchStateType.Success,
