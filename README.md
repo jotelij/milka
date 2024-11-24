@@ -53,12 +53,11 @@ The test folder contains unit tests for almost all components. Before running te
 
 - Adding a local cache storage for search results by adding a new cache inteceptor, using ***dio_cache_interceptor*** plugin, on the ***Dio*** instance of **Repository** [app/data/repository.dart] class. 
 
-- Adding a secure access token storing method on the **Repository** [app/data/repository.dart] class.
+- Adding a secure access token storing method on the **Repository** [app/data/repository.dart] class for security and effeciency.
 
 - Spotify private keys are hardcoded in the **AppConstat** [core/app_constants.dart] class in core folder. Since we are doing Client Credentials type of authentication, it will be exposing the secret key. Also, this approach is only recommend for server side(backend) applications authentication. To tackle this 
   - The authentication approach can be changed to Authorization code with PKCE, as recommended with Spotify. And client side code can be achieved by introducing a new repository **AuthenticationRepository** which utilizes **OAuth2** features.
-  - Using on build enviroment variable injection which can be then securelty saved in the app with *flutter_secure_storage* extention. Then the storage can be accessed from the **Repository** single instance constructor
-  - 
+  - Using on-build enviroment variable injection which can be then securelty saved in the app with *flutter_secure_storage* extention. Then the storage can be accessed from the **Repository** single instance constructor
 
 
 ## Authors
