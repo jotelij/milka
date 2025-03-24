@@ -60,16 +60,8 @@ The test folder contains unit tests for almost all components. Before running te
   - Using on-build enviroment variable injection which can be then securelty saved in the app with *flutter_secure_storage* extention. Then the storage can be accessed from the **Repository** single instance constructor
 
 
-## Authors
-
-- [@jotelij](https://www.github.com/jotelij)
-
-
 ## 🚀 About Me
 I'm a self-taught full stack developer.
-
-- Name: Jote Gutema
-- Email: jotelij@outlook.com/jtljlm3@gmail.com
 
 
 ## License

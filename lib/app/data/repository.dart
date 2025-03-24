@@ -122,7 +122,6 @@ class Repository implements IRepository {
 
       return result;
     } catch (e) {
-      print('e');
       throw const AppErrors(message: "Authentication Error occured.");
     }
   }
